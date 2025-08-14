@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speech Utility: Text-to-Speech and Speech-to-Text</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+    }
+    textarea {
+      width: 80%;
+      height: 150px;
+      margin-top: 20px;
+      font-size: 16px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Speech Utility</h1>
+
+  <!-- Text-to-Speech Section -->
+  <div>
+    <h2>Text-to-Speech</h2>
+    <textarea id="ttsInput" placeholder="Enter text here..."></textarea><br>
+    <button id="speakButton">Speak</button>
+  </div>
+
+  <!-- Speech-to-Text Section -->
+  <div>
+    <h2>Speech-to-Text</h2>
+    <button id="startSTT">Start Recording</button>
+    <button id="stopSTT" disabled>Stop Recording</button>
+    <textarea id="sttOutput" placeholder="Transcription will appear here..."></textarea>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
